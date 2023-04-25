@@ -12,6 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "liteapp-base": "^0.0.1",
-    "liteapp-cli": "^0.0.1"
+    "liteapp-cli": "^0.0.2"
   }
 }

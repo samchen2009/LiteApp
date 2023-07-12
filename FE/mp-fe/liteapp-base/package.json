@@ -11,7 +11,9 @@
     "build:app": "TARGET=app ENV=production gulp build",
     "build:web": "TARGET=web ENV=production gulp build",
     "build": "npm run build:app && npm run build:web",
-    "deploy": "npm run build && gulp deploy"
+    "deploy": "npm run build && gulp deploy",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "zhoujingyuan@qiyi.com",
   "license": "ISC",
@@ -20,10 +22,12 @@
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
     "gulp-scp2": "^0.2.0",
-    "gulp-zip": "^4.0.0"
+    "gulp-zip": "^4.0.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "gulp-watch": "^4.3.11",
     "uglifyjs-webpack-plugin": "^1.1.2"
-  }
+  },
+  "snyk": true
 }

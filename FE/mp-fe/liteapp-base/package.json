@@ -17,7 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "fs-extra": "^4.0.2",
-    "gulp": "^3.9.1",
+    "gulp": "^5.0.0",
     "gulp-connect": "^5.0.0",
     "gulp-scp2": "^0.2.0",
     "gulp-zip": "^4.0.0"
